@@ -1,103 +1,171 @@
+import Contact from "@/components/organism/Contact";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="">
+      <section className="flex">
+        <div className="flex-1 bg-[url('/images/hero/hero1.webp')] bg-cover">
+          <div className="flex h-full w-full items-center justify-center bg-[#1F1F1F]/85">
+            <div className="w-3/4">
+              <div className="border-primary border-l-8 pl-7">
+                <h1 className="text-6xl font-bold text-white">Construction</h1>
+              </div>
+              <p className="mt-7 w-9/12 text-start text-xl text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis
+                egestas pellentesque libero dolor in diam consequat ut. Mi nibh
+                amet viverra id aliquet neque odio.
+              </p>
+              <button className="bg-primary mt-14 cursor-pointer px-12 py-4 text-sm font-semibold text-white">
+                View Our Work
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="bg-primary p-9">
+          <div className="mx-auto w-11/12">
+            <h1 className="text-secondary text-3xl font-bold">Our Services</h1>
+            <div className="mt-3 w-3/4 space-y-8">
+              <div className="flex items-center gap-4">
+                <Image
+                  src={`/icons/ic-construction.svg`}
+                  width={54}
+                  height={54}
+                  alt="icon"
+                />
+                <div className="">
+                  <p className="text-secondary text-base font-bold">
+                    Building Construction
+                  </p>
+                  <p className="mt-2 text-sm text-white">
+                    Lorem ipsum dolor sit consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src={`/icons/ic-work.svg`}
+                  width={54}
+                  height={54}
+                  alt="icon"
+                />
+                <div className="">
+                  <p className="text-secondary text-base font-bold">
+                    Foundation Work
+                  </p>
+                  <p className="mt-2 text-sm text-white">
+                    Lorem ipsum dolor sit consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src={`/icons/ic-management.svg`}
+                  width={54}
+                  height={54}
+                  alt="icon"
+                />
+                <div className="">
+                  <p className="text-secondary text-base font-bold">
+                    Site Management
+                  </p>
+                  <p className="mt-2 text-sm text-white">
+                    Lorem ipsum dolor sit consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto px-16 py-9">
+        <div className="flex items-center justify-between">
+          <h2 className="font-bold text-black lg:text-3xl xl:text-[40px]">
+            Get a Quote For Your Project
+          </h2>
+          <button className="border-primary text-primary border-4 px-6 py-2 text-sm font-semibold lg:text-base xl:px-10 xl:py-4">
+            Free Quote
+          </button>
+        </div>
+      </section>
+      <section className="flex">
+        <div className="w-1/4 bg-[url('/images/portfolio/portfolio6.webp')] bg-cover bg-left"></div>
+        <div className="flex-1">
+          <div className="">
+            <div className="px-40 py-28">
+              <div className="">
+                <h1 className="text-4xl font-bold text-black">
+                  No Project Too Big Or Too Small
+                </h1>
+                <hr className="border-primary my-4 w-12 border-4" />
+              </div>
+              <div className="mt-9 grid grid-cols-1 gap-20 md:grid-cols-2">
+                <div className="space-y-10">
+                  <p className="text-typography text-sm leading-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sapien, dignissim tristique tellus sed faucibus nullam.
+                    Tincidunt mauris ut quam sed mauris proin feugiat.
+                    Scelerisque lorem posuere iaculis nunc amet phasellus.
+                  </p>
+                  <p className="text-typography text-sm leading-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sapien, dignissim tristique tellus sed faucibus nullam.
+                  </p>
+                </div>
+                <div className="">
+                  <p className="text-typography text-sm leading-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sapien, dignissim tristique tellus sed faucibus nullam.
+                    Tincidunt mauris ut quam sed mauris proin feugiat.
+                    Scelerisque lorem posuere iaculis nunc amet phasellus.
+                  </p>
+                  <button className="mt-10 cursor-pointer border-4 border-black px-10 py-2 text-sm font-semibold text-black uppercase">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="bg-primary flex w-full items-center justify-center py-6">
+                <div className="">
+                  <h2 className="text-secondary text-center text-[40px] font-bold">
+                    12
+                  </h2>
+                  <p className="text-secondary text-center text-sm font-bold uppercase">
+                    YEARS ESTABLISHED
+                  </p>
+                </div>
+              </div>
+              <div className="bg-secondary flex w-full items-center justify-center py-6">
+                <div className="">
+                  <h2 className="text-center text-[40px] font-bold text-white">
+                    250
+                  </h2>
+                  <p className="text-center text-sm font-bold text-white uppercase">
+                    COMPLETED PROJECTS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="@container mx-auto py-24">
+        <div className="text-center">
+          <h2 className="text-secondary text-[40px] font-bold">
+            Latest Projects
+          </h2>
+          <hr className="border-primary mx-auto my-4 w-12 border-4" />
+        </div>
+        <div className="">
+          <div className="grid grid-cols-1 gap-14 md:grid-cols-3"></div>
+          <button className="mt-9 cursor-pointer border-4 border-black px-10 py-2 text-sm font-semibold text-black uppercase">
+            View All
+          </button>
+        </div>
+      </section>
+      <h1>HomePage</h1>
+      <Contact />
     </div>
   );
 }
