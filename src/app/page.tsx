@@ -157,11 +157,80 @@ export default function Home() {
           </h2>
           <hr className="border-primary mx-auto my-4 w-12 border-4" />
         </div>
-        <div className="">
-          <div className="grid grid-cols-1 gap-14 md:grid-cols-3"></div>
-          <button className="mt-9 cursor-pointer border-4 border-black px-10 py-2 text-sm font-semibold text-black uppercase">
-            View All
-          </button>
+        <div className="mt-9">
+          <div className="mx-auto grid w-3/5 grid-cols-1 gap-14 md:grid-cols-3">
+            <div id="project">
+              <Image
+                src={"/images/portfolio/portfolio4.webp"}
+                width={293}
+                height={182}
+                alt="thumbnail"
+                className="w-full"
+              />
+              <div className="border-typography mt-5 border px-6 py-4">
+                <p className="text-secondary mt-6 text-base font-bold">
+                  Project Title
+                </p>
+                <p className="text-typography mt-5 text-sm leading-7">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et
+                  euismod bibendum adipiscing et orci, fermentum. Cras tristique
+                  viverra gravida et sit egestas.
+                </p>
+                <button className="border-typography text-typography mt-20 border px-5 py-2 text-xs font-bold uppercase">
+                  View Project
+                </button>
+              </div>
+            </div>
+            <div id="project">
+              <Image
+                src={"/images/portfolio/portfolio3.webp"}
+                width={293}
+                height={182}
+                alt="thumbnail"
+                className="w-full"
+              />
+              <div className="border-typography mt-5 border px-6 py-4">
+                <p className="text-secondary mt-6 text-base font-bold">
+                  Project Title
+                </p>
+                <p className="text-typography mt-5 text-sm leading-7">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et
+                  euismod bibendum adipiscing et orci, fermentum. Cras tristique
+                  viverra gravida et sit egestas.
+                </p>
+                <button className="border-typography text-typography mt-20 border px-5 py-2 text-xs font-bold uppercase">
+                  View Project
+                </button>
+              </div>
+            </div>
+            <div id="project">
+              <Image
+                src={"/images/portfolio/portfolio5.webp"}
+                width={293}
+                height={182}
+                alt="thumbnail"
+                className="w-full"
+              />
+              <div className="border-typography mt-5 border px-6 py-4">
+                <p className="text-secondary mt-6 text-base font-bold">
+                  Project Title
+                </p>
+                <p className="text-typography mt-5 text-sm leading-7">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id et
+                  euismod bibendum adipiscing et orci, fermentum. Cras tristique
+                  viverra gravida et sit egestas.
+                </p>
+                <button className="border-typography text-typography mt-20 border px-5 py-2 text-xs font-bold uppercase">
+                  View Project
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex w-full justify-center">
+            <button className="mt-9 cursor-pointer border-4 border-black px-10 py-2 text-sm font-semibold text-black uppercase">
+              View All
+            </button>
+          </div>
         </div>
       </section>
       <h1>HomePage</h1>
