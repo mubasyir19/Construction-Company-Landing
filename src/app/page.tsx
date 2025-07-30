@@ -4,14 +4,16 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="">
-      <section className="flex">
-        <div className="flex-1 bg-[url('/images/hero/hero1.webp')] bg-cover">
-          <div className="flex h-full w-full items-center justify-center bg-[#1F1F1F]/85">
-            <div className="w-3/4">
+      <section className="flex flex-col md:flex-row">
+        <div className="bg-[url('/images/hero/hero1.webp')] bg-cover md:flex-1">
+          <div className="flex h-full w-full items-center justify-center bg-[#1F1F1F]/85 px-6 py-10">
+            <div className="lg:w-3/4">
               <div className="border-primary border-l-8 pl-7">
-                <h1 className="text-6xl font-bold text-white">Construction</h1>
+                <h1 className="text-3xl font-bold text-white lg:text-6xl">
+                  Construction
+                </h1>
               </div>
-              <p className="mt-7 w-9/12 text-start text-xl text-white">
+              <p className="mt-7 text-start text-xl text-white lg:w-9/12">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis
                 egestas pellentesque libero dolor in diam consequat ut. Mi nibh
                 amet viverra id aliquet neque odio.
@@ -78,7 +80,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-16 py-9">
+      <section className="container mx-auto px-6 py-9 lg:px-16">
         <div className="flex items-center justify-between">
           <h2 className="font-bold text-black lg:text-3xl xl:text-[40px]">
             Get a Quote For Your Project
@@ -88,18 +90,18 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="flex">
-        <div className="w-1/4 bg-[url('/images/portfolio/portfolio6.webp')] bg-cover bg-left"></div>
-        <div className="flex-1">
+      <section className="flex flex-col lg:flex-row">
+        <div className="hide w-1/4 bg-[url('/images/portfolio/portfolio6.webp')] bg-cover bg-left md:block"></div>
+        <div className="lg:flex-1">
           <div className="">
-            <div className="px-40 py-28">
+            <div className="px-6 py-28 lg:px-40">
               <div className="">
                 <h1 className="text-4xl font-bold text-black">
                   No Project Too Big Or Too Small
                 </h1>
                 <hr className="border-primary my-4 w-12 border-4" />
               </div>
-              <div className="mt-9 grid grid-cols-1 gap-20 md:grid-cols-2">
+              <div className="mt-9 grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-20">
                 <div className="space-y-10">
                   <p className="text-typography text-sm leading-8">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -158,7 +160,7 @@ export default function Home() {
           <hr className="border-primary mx-auto my-4 w-12 border-4" />
         </div>
         <div className="mt-9">
-          <div className="mx-auto grid w-3/5 grid-cols-1 gap-14 md:grid-cols-3">
+          <div className="mx-auto grid w-3/4 grid-cols-1 gap-6 md:grid-cols-3 lg:gap-14 xl:w-3/5">
             <div id="project">
               <Image
                 src={"/images/portfolio/portfolio4.webp"}
