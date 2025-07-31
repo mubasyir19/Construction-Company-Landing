@@ -235,6 +235,47 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="flex flex-col lg:flex-row">
+        <div className="bg-secondary flex w-1/4 items-center justify-center bg-left px-9 py-20">
+          <div className="">
+            <h2 className="text-[40px] font-bold text-white">
+              We&apos;ve Been Building For Over 10 Years
+            </h2>
+            <hr className="border-primary my-4 w-12 border-4" />
+            <p className="mt-16 text-sm leading-7 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien,
+              dignissim tristique tellus sed faucibus nullam. Tincidunt mauris
+              ut quam sed mauris proin feugiat. Scelerisque lorem posuere
+              iaculis nunc amet phasellus.
+            </p>
+            <button className="border-primary text-primary mt-9 cursor-pointer border-4 px-10 py-2 text-sm font-semibold uppercase">
+              About Us
+            </button>
+          </div>
+        </div>
+        <div className="lg:flex-1">
+          <div className="flex h-full flex-col">
+            <div className="min-h-[400px] w-full flex-1 bg-[url('/images/sections/section1.webp')] bg-cover bg-center"></div>
+            <div className="flex flex-col lg:flex-row">
+              <div className="bg-primary flex w-full items-center justify-start p-6">
+                <div>
+                  <h4 className="text-3xl font-bold text-black">
+                    Call for a Quote
+                  </h4>
+                  <p className="text-2xl font-medium text-black">
+                    (346) 234-6973
+                  </p>
+                </div>
+              </div>
+              <div className="flex w-full items-center justify-center p-6">
+                <button className="cursor-pointer border-4 border-black px-10 py-2 text-sm font-semibold text-black uppercase">
+                  Online Estimate form
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <h1>HomePage</h1>
       <Contact />
     </div>
