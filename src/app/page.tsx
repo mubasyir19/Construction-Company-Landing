@@ -1,4 +1,6 @@
 import Contact from "@/components/organism/Contact";
+import FAQComponents from "@/components/organism/FAQ";
+import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 export default function Home() {
@@ -152,7 +154,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="@container mx-auto py-24">
+      <section className="container mx-auto py-24">
         <div className="text-center">
           <h2 className="text-secondary text-[40px] font-bold">
             Latest Projects
@@ -236,7 +238,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col lg:flex-row">
-        <div className="bg-secondary flex w-1/4 items-center justify-center bg-left px-9 py-20">
+        <div className="bg-secondary flex w-full items-center justify-center bg-left px-9 py-20 md:w-1/4">
           <div className="">
             <h2 className="text-[40px] font-bold text-white">
               We&apos;ve Been Building For Over 10 Years
@@ -276,7 +278,106 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <h1>HomePage</h1>
+      <section className="bg-light-secondary w-full py-24">
+        <div className="container mx-auto flex flex-col md:flex-row">
+          <div className="bg-light-secondary w-full pr-14 md:w-1/3">
+            <div className="">
+              <h2 className="text-[40px] font-bold text-black">
+                Let&apos;s Build Something Together
+              </h2>
+              <hr className="border-primary my-4 w-12 border-4" />
+              <p className="text-typography mt-8 text-sm leading-7">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien,
+                dignissim tristique tellus sed faucibus nullam. Tincidunt mauris
+                ut quam sed mauris proin feugiat.
+              </p>
+              <button className="border-primary text-primary mt-9 cursor-pointer border-4 px-10 py-2 text-sm font-semibold uppercase">
+                Get In Touch
+              </button>
+            </div>
+          </div>
+          <div className="flex-1 bg-white px-6 py-4">
+            <FAQComponents />
+          </div>
+        </div>
+      </section>
+      <section className="bg-light-secondary py-24">
+        <div className="container mx-auto w-3/4">
+          <div className="text-center">
+            <h2 className="text-secondary text-[40px] font-bold">
+              Client Testimonials
+            </h2>
+            <hr className="border-primary mx-auto my-4 w-12 border-4" />
+          </div>
+          <div className="mt-10 grid grid-cols-3 gap-14">
+            <div id="testimonial" className="bg-white px-8 py-10">
+              <div className="flex items-center justify-center gap-3">
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+              </div>
+              <div className="mt-10">
+                <p className="text-typography mt-10 text-sm leading-7">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Sapien, dignissim tristique tellus sed faucibus nullam.”
+                </p>
+              </div>
+              <div className="mt-6">
+                <p className="text-base font-medium">John Smith</p>
+              </div>
+            </div>
+            <div id="testimonial" className="bg-white px-8 py-10">
+              <div className="flex items-center justify-center gap-3">
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+              </div>
+              <div className="mt-10">
+                <p className="text-typography mt-10 text-sm leading-7">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Sapien, dignissim tristique tellus sed faucibus nullam.”
+                </p>
+              </div>
+              <div className="mt-6">
+                <p className="text-base font-medium">John Smith</p>
+              </div>
+            </div>
+            <div id="testimonial" className="bg-white px-8 py-10">
+              <div className="flex items-center justify-center gap-3">
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+                <StarIcon className="text-primary size-6" />
+              </div>
+              <div className="mt-10">
+                <p className="text-typography mt-10 text-sm leading-7">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Sapien, dignissim tristique tellus sed faucibus nullam.”
+                </p>
+              </div>
+              <div className="mt-6">
+                <p className="text-base font-medium">John Smith</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-light-secondary py-24">
+        <div className="container mx-auto">
+          <Image
+            src={`/images/clients.png`}
+            width={1048}
+            height={240}
+            alt="clients"
+            className="mx-auto h-auto w-3/4"
+          />
+        </div>
+      </section>
       <Contact />
     </div>
   );
