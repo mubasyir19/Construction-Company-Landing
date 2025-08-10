@@ -5,7 +5,7 @@ export interface Menu {
 }
 
 export const menuNav: Menu[] = [
-  { name: "Home", link: "/home" },
+  { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Service", link: "/service" },
   { name: "Portfolio", link: "/portfolio" },
