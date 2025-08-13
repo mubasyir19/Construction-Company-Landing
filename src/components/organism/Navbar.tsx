@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between bg-white px-9 py-6">
+    <nav className="hidden items-center justify-between bg-white px-9 py-6 md:flex">
       <div className="">
         <h2 className="text-2xl font-semibold">Construction Company Landing</h2>
       </div>
